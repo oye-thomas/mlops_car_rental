@@ -1,0 +1,20 @@
+[project]
+name = "mlops-car-rental"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Thomas", email = "alabythomas@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "ipykernel>=7.4.0",
+]
+
+[project.scripts]
+mlops-car-rental = "mlops_car_rental:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
